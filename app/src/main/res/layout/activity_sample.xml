@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+    <ScrollView android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:id="@+id/layout">
+
+    <com.example.dell.mymovie.view.MovingImageView android:layout_height="250dp" android:layout_width="match_parent" android:id="@+id/image" app:miv_start_delay="1000" app:miv_speed="100" app:miv_repetitions="-1" app:miv_min_relative_offset="0.2" app:miv_max_relative_size="3.0" app:miv_load_on_create="true" android:src="@drawable/anotherworld" android:onClick="clickImage" android:clickable="true"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/title" android:onClick="clickTitle" android:clickable="true" android:textStyle="bold|italic" android:textSize="50sp" android:textColor="@android:color/white" android:text="@string/title" android:paddingLeft="25dp" android:background="#80444444" android:layout_alignBottom="@id/image"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:onClick="clickText" android:clickable="true" android:text="@string/text" android:padding="16dp" android:layout_below="@id/image"/>
+
+</RelativeLayout>
+
+</ScrollView>
